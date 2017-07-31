@@ -23,4 +23,8 @@ public class CircusTest{
     assertEquals("Zippos Circus", circus.getName());
   }
 
+  @Test 
+  public void testNoPeopleInCircus(){
+    assertEquals(0, circus.countPeople());
+  }
 }
