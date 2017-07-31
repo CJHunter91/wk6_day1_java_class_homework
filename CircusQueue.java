@@ -15,4 +15,8 @@ class CircusQueue{
     }
     return count;
   }
+
+  public void addPerson(){
+    this.queue[countPeople()] = new Person();
+  }
 }
