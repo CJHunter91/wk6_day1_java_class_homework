@@ -25,4 +25,12 @@ class CircusQueue{
   public boolean isFull(){
     return countPeople() == queue.length;
   }
+  public void removePerson(){
+    for(int i = 0; i < this.queue.length; i++){
+      if(this.queue[i] != null){
+        this.queue[i] = null;
+        return;
+      }
+    }
+  }
 }

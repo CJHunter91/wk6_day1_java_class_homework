@@ -66,4 +66,10 @@ public class CircusTest{
     }
     assertEquals(true, queue.isFull());
   }
+  @Test 
+  public void testRemoveFromQueue(){
+  queue.addPerson();
+  queue.removePerson();
+  assertEquals(0, queue.countPeople());
+  }
 }
