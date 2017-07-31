@@ -1,7 +1,7 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.*;
 
-class CircusTest{
+public class CircusTest{
   Circus circus;
   Person person;
   CircusQueue queue;
@@ -14,7 +14,13 @@ class CircusTest{
   }
 
   @Test
-  public void testGetName(){
+  public void testGetNamePerson(){
     assertEquals("Chris", person.getName());
   }
+
+  @Test
+  public void testGetNameCircus(){
+    assertEquals("Zippos Circus", circus.getName());
+  }
+
 }
