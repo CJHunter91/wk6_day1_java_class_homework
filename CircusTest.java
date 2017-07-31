@@ -34,9 +34,10 @@ public class CircusTest{
   }
   @Test
   public void testCheckCircusIsFull(){
-    for(int i = 0; i <= 5; i++){
+    for(int i = 0; i < 5; i++){
       circus.addPerson(); 
     }
+    System.out.println(circus.countPeople());
     assertEquals(true, circus.isFull());
   }
 }
