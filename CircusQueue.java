@@ -17,8 +17,12 @@ class CircusQueue{
   }
 
   public void addPerson(){
-    this.queue[countPeople()] = new Person();
+    if(!isFull()){
+      this.queue[countPeople()] = new Person();
+    }
   }
 
-  
+  public boolean isFull(){
+    return countPeople() == queue.length;
+  }
 }
