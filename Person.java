@@ -3,7 +3,7 @@ class Person{
 
   private String name = "Chris";
 
-  public Person(String name){
+  public Person(){
     // this.name = name;
   }
 

@@ -9,7 +9,7 @@ public class CircusTest{
   @Before
   public void before(){
     circus = new Circus();
-    person = new Person("Chris");
+    person = new Person();
     queue = new CircusQueue();
   }
 
@@ -31,5 +31,12 @@ public class CircusTest{
   public void testAddPeopleToCircus(){
     circus.addPerson();
     assertEquals(1, circus.countPeople());
+  }
+  @Test
+  public void testCheckCircusIsFull(){
+    for(int i = 0; i <= 5; i++){
+      circus.addPerson(); 
+    }
+    assertEquals(true, circus.isFull());
   }
 }

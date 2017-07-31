@@ -22,5 +22,8 @@ class Circus{
     return count;
   }
 
+  public void addPerson(){
+    this.customers[0] = new Person();
+  }
 
 }
