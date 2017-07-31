@@ -47,4 +47,15 @@ public class CircusTest{
     }
     assertEquals(true, circus.isFull());
   }
+
+  @Test 
+  public void testNoPeopleInQueue(){
+    assertEquals(0, queue.countPeople());
+  }
+
+  @Test 
+  public void testAddPersonToQueue(){
+    queue.addPerson();
+    assertEquals(1, queue.countPeople());
+  }
 }
