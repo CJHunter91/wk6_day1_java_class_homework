@@ -23,7 +23,9 @@ class Circus{
   }
 
   public void addPerson(){
-    this.customers[countPeople()] = new Person();
+    if(!isFull()){
+      this.customers[countPeople()] = new Person();
+    }
   }
 
   public boolean isFull(){
