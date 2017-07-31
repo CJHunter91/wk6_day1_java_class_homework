@@ -27,4 +27,9 @@ public class CircusTest{
   public void testNoPeopleInCircus(){
     assertEquals(0, circus.countPeople());
   }
+  @Test
+  public void testAddPeopleToCircus(){
+    circus.addPerson();
+    assertEquals(1, circus.countPeople());
+  }
 }

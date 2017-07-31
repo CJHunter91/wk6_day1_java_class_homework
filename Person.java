@@ -1,10 +1,10 @@
 
 class Person{
 
-  private String name;
+  private String name = "Chris";
 
   public Person(String name){
-    this.name = name;
+    // this.name = name;
   }
 
   public String getName(){
