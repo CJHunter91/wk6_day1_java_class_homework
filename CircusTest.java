@@ -72,4 +72,9 @@ public class CircusTest{
   queue.removePerson();
   assertEquals(0, queue.countPeople());
   }
+  @Test
+  public void testAdmission(){
+    circus.admitPerson(queue);
+    assertEquals(1, circus.countPeople());
+  }
 }

@@ -32,4 +32,9 @@ class Circus{
     return countPeople() == this.customers.length; 
   }
 
+  public void admitPerson(CircusQueue queue){
+    queue.removePerson();
+    addPerson();
+  }
+
 }
