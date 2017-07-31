@@ -9,9 +9,12 @@ class CircusTest{
   @Before
   public void before(){
     circus = new Circus();
-    person = new Person();
+    person = new Person("Chris");
     queue = new CircusQueue();
   }
 
-  
+  @Test
+  public void testGetName(){
+    assertEquals("Chris", person.getName());
+  }
 }
