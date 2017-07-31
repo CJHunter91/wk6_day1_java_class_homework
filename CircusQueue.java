@@ -19,4 +19,6 @@ class CircusQueue{
   public void addPerson(){
     this.queue[countPeople()] = new Person();
   }
+
+  
 }
